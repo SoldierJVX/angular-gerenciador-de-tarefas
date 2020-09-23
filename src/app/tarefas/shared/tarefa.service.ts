@@ -10,7 +10,7 @@ export class TarefaService {
 
   listarTodos(): Tarefa[] {
     const tarefas = localStorage['tarefas'];
-    return tarefas ? JSON.parse(tarefas) : []
+    return tarefas ? JSON.parse(tarefas) : [];
   }
 
   cadastrar(tarefa: Tarefa): void {
